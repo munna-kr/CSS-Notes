@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.selectors.css">
+    <title>CSS SELECTORS</title>
+</head>
+
+<body>
+    <div id="heading">
+        <h1>CSS selectors</h1>
+        <p>It is used to select html elements to style them.</p>
+    </div>
+
+    <h2>Different types of selectors:</h2>
+
+    <!-- type-selector -->
+    <div class="selector-types">
+        <h3>1. Type selector/element selector: </h3>
+        <p>select element based on its types. <spam class="example"><b>Example:</b> h1, h2, p, etc</spam></p>
+        <pre class="pre-selector"> p{<span class="comment"> /* css properties */ </span>} </pre>
+    </div>
+
+    <!-- Class selector -->
+    <div class="selector-types">
+        <h3>2. Class selector: </h3>
+        <p>select all elements with a specific class, class start with a dot ('.')
+           <span class="example"><b>Example:</b> .my-class</span>
+           <pre class="pre-selector"> .my-class{<span class="comment"> /* css properties */ </span>}</pre>
+           <mark><strong>Note:</strong> a class can't start with number !</mark>
+        </p>
+    </div>
+
+    <!-- ID selector -->
+    <div class="selector-types">
+        <h3>3. ID selector: </h3>
+        <p>It targets a single element with specifi ID, starts with a hash ('#').<br>
+           it is unique within a page.
+        <span class="example"><b>Example:</b> #my-id</span></p>
+        <pre class="pre-selector"> #my-id{ <span class="comment"> /* css properties */ </span> }</pre>
+        <mark><strong>Note: </strong>an ID can't start with number !</mark>
+    </div>
+
+    <!-- Universal selector -->
+    <div class="selector-types">
+        <h3>4. Universal selector: </h3>
+        <p>It select all elements on the page. 
+        <span class="example"><b>Example:</b> *</span></p>
+        <pre class="pre-selector"> *{<span class="comment"> /* css properties */ </span>}</pre>
+    </div>
+
+    
+    <!-- Attribute selector -->
+    <div class="selector-types">
+        <h3>5. Attribute selector: </h3>
+        <p>The [attribute] selector is used to select elements with a specified attribute.
+            <span class="example"><b>Example:</b> a[href] </span></p>
+            <pre class="pre-selector"> a[href]{<span class="comment"> /* css properties */ </span>}</pre>
+            <!--CSS attribute value selector-->
+            <h4>(a) CSS [attribute="value"] Selector</h4>
+            it select elements with specified attribute and value.
+            <pre class="pre-selector"> a[target="_blank"]{<span class="comment"> /* css properties */ </span>}</pre>
+            
+            <!--CSS attribute value selector with speciic word-->
+            <h4>(b) CSS [attribute~="value"] Selector</h4>
+            it select elements with attribute value containing specific word
+            <pre class="pre-selector"> a[h3~="Notes"]{<span class="comment"> /* css properties */ </span>}</pre>
+        </div>
+        
+    <!--CSS COMBINATORS-->
+    <div id="heading">
+        <h1>CSS Combinators</h1>
+        <p>It explains the relationship between the selectors.</p>
+    </div>
+    <h2>Different types of combinators</h2>
+
+    <!--Descendent selector-->
+    <div class="combinator-types">
+        <h3>1. Descendent selector (space)</h3>
+        <p>It select all elements that is descendant of specific element.
+            <span class="example">
+            <pre class="pre-combinator"> div h3{<span class="comment"> /*css properties */ </span>}</pre>
+            it wiil select all element h3: which is child, grand child, great grand child of div element.
+        </p>
+    </div>
+
+    <!--Child selector-->
+    <div class="combinator-types">
+        <h3>2. Child selector(>) : </h3>
+        <p>It select only that  element which is direct child of specific element.
+        <span class="example">
+        <pre class="pre-combinator"> div > h3{<span class="comment"> /* css properties */ </span>}</pre>
+        it will select all element h3, which is only direct child of the div element.
+        </p>
+    </div>
+
+    <!--Adjacent sibling selector -->
+    <div class="combinator-types">
+        <h3>3. Adjacent siblings selector(+) : </h3>
+        <p>It is used to select an element which is just after the specific element.
+        <span class="example">
+        <pre class="pre-combinator"> div + h3{<span class="comment"> /* css properties */ </span>}</pre>
+        it wiil select element h3, which is just after the div element.
+        <mark><strong>Note:</strong> sibling elements must be of same parent !</mark>
+        </p>
+    </div>
+
+    <!--General sibling selector -->
+    <div class="combinator-types">
+        <h3>4. General siblings selector(~) : </h3>
+        <p>It is used to select all elements, that are just after the specific element.
+        <span class="example">
+        <pre class="pre-combinator"> div ~ h3{<span class="comment"> /* css properties */ </span>}</pre>
+        it wiil select all elements h3, that are just after the div element.
+        </p>
+    </div>
+
+    <!--Pseudo class and element selector-->
+    <div id="heading">
+        <h1>Pseudo class and element selectors</h1>
+    </div>
+
+    <!--Pseudo class selector-->
+    <div class="pseudo-selector">
+        <h3>1. Pseudo class selector ( : ) </h3>
+        <p>It is used to define a special state of an element.<spam class="example"><b>Example:</b> turn the paragraph grey when cursor is hover on the paragraph.</spam>
+        <b>Syntax- </b>selector:pseudo-class{ ... }</p>
+        <pre class="pre-pseudo-selector"> p:hover{<span class="comment"> /* css properties */ </span>} </pre>
+    </div>
+
+    <!--Pseudo element selector-->
+    <div class="pseudo-selector">
+        <h3>2. Pseudo element selector ( :: ) </h3>
+        <p>It is used to style specified parts of an element.<spam class="example"><b>Example: </b>Turn the first line of paragraph into red color.</spam>
+        <b>Syntax- </b>selector::pseudo-element{ ... }</p>
+        <pre class="pre-pseudo-selector"> p::first-line{<span class="comment"> /* css properties */ </span>} </pre>
+    </div>    
+</body>
+
+</html>

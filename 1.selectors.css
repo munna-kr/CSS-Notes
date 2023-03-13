@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(34, 35, 35);
+    padding-left: 20px;
+    margin: 0;
+}
+
+
+#heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(229, 235, 241);
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(217, 233, 233);
+    margin-left: 8%;
+}
+
+#heading p{
+    font-size: 18px;
+    font-style: italic;
+}
+
+pre {
+    background-color: rgb(62, 62, 61);
+    width: inherit;
+    height: inherit;
+    min-width: 100px;
+    min-height: 60px;
+    font-size: 18px;
+    text-align: left;
+    padding-top: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.pre-selector {
+    border-left: solid 15px lightseagreen;
+}
+
+.pre-combinator {
+    border-left: solid 15px rgb(117, 32, 178);
+}
+
+.pre-pseudo-selector{
+    border-left: solid 15px rgb(239, 197, 8);
+}
+
+.comment{
+    color: rgb(100, 115, 131);
+    font-style: italic;
+}
+
+.selector-types{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(200, 223, 223);
+    font-size: 16px;
+    border-left: 30px solid rgb(25, 238, 110);
+    padding-left: 20px;
+    margin-bottom: 50px;
+    background-color:rgb(49, 52, 54);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 75%; 
+    margin-left: 10%;
+}
+
+.combinator-types{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(200, 223, 223);
+    font-size: 16px;
+    border-left: 30px solid rgb(222, 136, 239);
+    padding-left: 20px;
+    margin-bottom: 50px;
+    background-color:rgb(49, 52, 54);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 75%; 
+    margin-left: 10%;
+}
+
+.pseudo-selector{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(200, 223, 223);
+    font-size: 16px;
+    border-left: 30px solid rgb(223, 239, 136);
+    padding-left: 20px;
+    margin-bottom: 50px;
+    background-color:rgb(49, 52, 54);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 75%; 
+    margin-left: 10%;
+}
+
+mark{
+    display: block;
+    width: fit-content;
+    padding: 5px;
+    background-color: rgb(207, 207, 11);
+}
+.example{
+    display: block;
+    color: rgb(170, 181, 191);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div:hover{
+    background-color: rgb(36, 45, 21);
+}
